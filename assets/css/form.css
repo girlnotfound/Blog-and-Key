@@ -41,11 +41,9 @@ textarea {
     border-radius: 4px;
 }
 
-/* Used media query to stack items into a column, one on top of the other when the window gets smaller */
+/* Used media query to stack elements vertically on smaller screens */
 @media screen and (max-width: 768px) {
-    body,
-    img,
-    .content {
+    body {
         flex-direction: column;
     }
 }
