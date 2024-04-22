@@ -11,22 +11,37 @@
 
 <body>
 
-    <div class="container">
+<header>
+    <h1>Blog and Key</h1>
+        <nav>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+</header>
+
+<div class="split left">
+    <section class="centered">
         <img src="./assets/images/blog-and-key-graphic.png" alt="Blog and Key Graphic">
-    </div>
-    <div class="form">
-        <h1>What's On Your Mind?</h1>
-        <form>
-            <h2> Username: </h2>
-                <input user="username" id="username" />
-            <h3> Title </h3>
-                <input title="title" id="title" />
-            <br>
-                <textarea id="textarea" placeholder="Tell Me Everything"></textarea>
-            <br>
-                <button id="submit">Submit</button>
-        </form>
-    </div>
+    </section>
+</div>
+
+<div class="split right">
+    <section class="form">
+        <h2>What's On Your Mind?</h2>
+            <form>
+                <label for="user"> Username:</label>
+                    <input type="text" id="user" name="user" />
+                <label for="title"> Title: </label>
+                    <input type="text" id="title" name="title" />
+                <br>
+                    <textarea id="textarea" placeholder="Tell Me Everything"></textarea>
+                <br>
+                    <button id="submit">Submit</button>
+            </form>
+    </section>
+</div>
 
 </body>
 </html>
