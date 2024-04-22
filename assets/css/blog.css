@@ -1,0 +1,121 @@
+:root {
+    --green-gray: #5c715e;
+    --sea-green: #b6cdbd;
+    --pale-green: #ddeedf;
+    --mint-cream: #f2f9f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0;
+    width: 100%;
+    background-color: var(--green-gray);
+    color: var(--mint-cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid white;
+    z-index: 10;
+    position: relative;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav {
+    font-size: 30px;
+    font-weight: 550;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.button {
+    background-color: var(--mint-cream);
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid var(--green-gray)
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: var(--sea-green);
+    color: black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* to hide the default html checkbox*/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--mint-cream);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--green-gray);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--sea-green);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--mint-cream);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: var(--green-gray);
+    color: white;
+}
