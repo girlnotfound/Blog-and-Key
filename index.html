@@ -15,7 +15,7 @@
     <h1>Blog and Key</h1>
         <nav>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="theme-switcher">
                 <span class="slider round"></span>
             </label>
         </nav>
@@ -32,16 +32,16 @@
         <h2>What's On Your Mind?</h2>
             <form>
                 <label for="user"> Username:</label>
-                    <input type="text" id="user" name="user" />
+                    <input type="text" id="username" name="user" />
                 <label for="title"> Title: </label>
                     <input type="text" id="title" name="title" />
                 <br>
-                    <textarea id="textarea" placeholder="Tell Me Everything"></textarea>
+                    <textarea id="content" placeholder="Tell Me Everything!"></textarea>
                 <br>
                     <button id="submit">Submit</button>
             </form>
     </section>
 </div>
-
+<script src="./assets/js/form.js"></script>
 </body>
 </html>

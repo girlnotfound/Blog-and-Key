@@ -23,7 +23,6 @@ body {
 header {
     padding: 0;
     width: 100%;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     background-color: var(--green-gray);
     color: var(--mint-cream);
     display: flex;
@@ -36,6 +35,7 @@ header {
 
 header h1 {
     margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header nav {
@@ -165,9 +165,18 @@ textarea {
     border-radius: 4px;
 }
 
+.dark-mode {
+    background-color: var(--green-gray);
+    color: white;
+}
+
 /* Used media query to stack elements vertically on smaller screens */
 @media screen and (max-width: 768px) {
-    body {
+    body
+    header,
+    section,
+    img,
+    .split {
         flex-direction: column;
     }
 }
