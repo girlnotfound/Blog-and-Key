@@ -88,72 +88,6 @@ article footer {
     color: black;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* to hide the default html checkbox*/
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--mint-cream);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--green-gray);
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: var(--sea-green);
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px var(--mint-cream);
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.dark-mode {
-    background-color: var(--green-gray);
-    color: white;
-}
-
 .main-footer {
     padding: 20px;
     position: fixed;
@@ -180,12 +114,31 @@ nav ul li a {
     color: var(--sea-green);
 }
 
-/* Used media query to stack elements vertically on smaller screens */
+/* Used media queries for responsive design for tablets and phones */ 
 @media screen and (max-width: 768px) {
-
-    body header,
-    main,
-    footer {
+    header { /* to stack vertically and align in the center */ 
         flex-direction: column;
+        align-items: center;
+    }
+
+    header h1,
+    header nav { /* margin for space above the h1 and nav when stacked vertically */
+        margin-top: 10px; 
+    }
+    
+    main { /* Increase padding to ensure space between the main content and its border */
+        padding: 15px; 
+    }
+    
+    .button { /* adjusted button padding to fit smaller screens */
+        padding: 3px 7px;
+    }
+    
+    article { /* Reduced padding for smaller screens */
+        padding: 15px; 
+    }
+    
+    .main-footer { /* Consistent padding around the footer for balanced spacing on smaller screens */
+        padding: 15px;
     }
 }
