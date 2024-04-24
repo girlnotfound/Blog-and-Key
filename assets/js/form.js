@@ -1,29 +1,29 @@
 // access HTML elements
-const userName = document.querySelector('#username');
-const postTitle = document.querySelector('#title');
-const blogContent = document.querySelector('#content');
+const usernameEl = document.querySelector('#username');
+const titleEl = document.querySelector('#title');
+const contentEl = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
+const informationEl = document.querySelector('#information');
+let blogCollection = JSON.parse(localStorage.getItem("blog")) || [];
 
-// store username in local storage
-function saveBlog () {
-    localStorage.setItem("nameOfUser", userName.value);
-}
+//Event Listener
+submitButton.addEventListener("click", function (event) {
+  //Preventing Default Behavior
+  event.preventDefault();
 
-// shows username in local storage
-submitButton.addEventListener("click", saveBlog);
+if (usernameEl.value === "" || titleEl.value === "" || contentEl.value === "") {
+    alert("Please fill out your username, title and blog text")
+} else {
+    //Creating Vent Post Object
+    const blogPost = {
+      username: usernameEl.value,
+      title: titleEl.value,
+      content: contentEl.value,
+    };
+ blogCollection.push(blogPost);
+    //Storing Data in Local Storage
+    localStorage.setItem("blog", JSON.stringify(blogCollection));
 
-// store blog title in local storage
-function blogTitle () {
-    localStorage.setItem("titleOfBlog", postTitle.value);
-}
-
-// shows title in local storage
-submitButton.addEventListener("click", blogTitle)
-
-// store posts content in local storage
-function postContent () {
-    localStorage.setItem("contentInPost", blogContent.value);
-}
-
-// shows blogs content in local storage
-submitButton.addEventListener("click", postContent)
+    window.location.replace("blog.html");
+  }
+});
