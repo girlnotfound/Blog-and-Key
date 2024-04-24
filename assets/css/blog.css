@@ -179,3 +179,13 @@ nav ul li a {
     text-decoration: none;
     color: var(--sea-green);
 }
+
+/* Used media query to stack elements vertically on smaller screens */
+@media screen and (max-width: 768px) {
+
+    body header,
+    main,
+    footer {
+        flex-direction: column;
+    }
+}

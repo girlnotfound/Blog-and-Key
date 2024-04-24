@@ -172,8 +172,8 @@ textarea {
 
 /* Used media query to stack elements vertically on smaller screens */
 @media screen and (max-width: 768px) {
-    body
-    header,
+
+    body header,
     section,
     img,
     .split {
