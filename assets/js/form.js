@@ -1,18 +1,8 @@
 // access HTML elements
-const themeSwitcher = document.querySelector('#theme-switcher');
 const userName = document.querySelector('#username');
 const postTitle = document.querySelector('#title');
 const blogContent = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
-
-// to get light mode or dark mode
-function toggleDarkMode () {
-  let body = document.body;
-  body.classList.toggle("dark-mode");
-}
-
-// listens for click of the toggle
-themeSwitcher.addEventListener("click", toggleDarkMode)
 
 // store username in local storage
 function saveBlog () {
