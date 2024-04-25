@@ -15,8 +15,9 @@
 <header>
     <h1>Blog and Key</h1>
         <nav>
-            
+            <!-- back button to navigate back to homepage using JavaScript -->
             <button class="button" onclick="goBack()">Back</button>
+            <!-- light mode/dark mode theme switcher toggle -->
             <label class="switch">
                 <input type="checkbox" id="theme-switcher">
                 <span class="slider round"></span>
@@ -24,7 +25,9 @@
         </nav>
 </header>
 
-<main>
+<!-- main content area where blog posts are displayed -->
+<main id="blog-list">
+    <!-- articles to host single blog posts -->
     <article>
         <h2 class="title">Title:</h2>
         <p class="content"></p>
@@ -51,6 +54,7 @@
 
 </main>
 
+<!-- footer section with contact information and links to reach me -->
 <footer class="main-footer">
     <aside> &#10024; Made By: Kaila Ronquillo &#x2728; </aside>
     <nav>
