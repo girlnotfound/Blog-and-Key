@@ -20,7 +20,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--mint-cream);
+    background-color: #a7b99e;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -38,11 +38,11 @@
 }
 
 input:checked+.slider {
-    background-color: var(--sea-green);
+    background-color: #a7b99e;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px var(--mint-cream);
+    box-shadow: 0 0 1px;
 }
 
 input:checked+.slider:before {
@@ -66,6 +66,15 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-    background-color: var(--sea-green);
+    background-color: #3c4245;
     color: white;
+}
+
+body.dark-mode .main-footer {
+    background-color: #3c4245;
+    color: white;
+}
+
+.dark-mode a {
+    color: white
 }

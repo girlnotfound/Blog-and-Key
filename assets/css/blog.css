@@ -49,11 +49,12 @@ body {
 
 main {
     flex-grow: 1;
-    padding: 30px;
+    padding: 55px;
     width: 100%;
 }
 
 article {
+    display: block;
     width: auto;
     margin-bottom: 10px;
     padding: 36px;
@@ -86,13 +87,14 @@ article footer {
 }
 
 .main-footer {
-    padding: 20px;
+    height: auto;
+    padding: 2px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background: var(--green-gray);
-    color: white;
+    color: black;
     border: solid white;
     text-align: center;
 }
@@ -108,7 +110,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--sea-green);
+    color: black;
 }
 
 /* Used media queries for responsive design for tablets and phones */ 
