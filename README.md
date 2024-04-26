@@ -33,7 +33,7 @@
 ![Sceenshot of Blog and Key Home Page](./assets/images/blog-and-key-homepage.png)
 ![Sceenshot of Blog and Key Blog Page](./assets/images/blog-and-key-blogpage.png)
 
-[Link to Deployed Website]()
+[Link to Deployed Website](https://girlnotfound.github.io/Blog-and-Key/)
 
 ## Collaborators
 
