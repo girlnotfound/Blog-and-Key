@@ -102,6 +102,7 @@ textarea {
     margin-top: 10px; /* for room above each text box */
     border: 1px solid var(--green-gray);
     border-radius: 4px;
+    word-break: break-word;
 }
 
 #form #submit {

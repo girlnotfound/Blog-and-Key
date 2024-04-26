@@ -28,6 +28,13 @@
 
 - JavaScript for the interactive elements and managing localStorage.
 
+## Usage
+
+![Sceenshot of Blog and Key Home Page](./assets/images/blog-and-key-homepage.png)
+![Sceenshot of Blog and Key Blog Page](./assets/images/blog-and-key-blogpage.png)
+
+[Link to Deployed Website]()
+
 ## Collaborators
 
 This project was made possible with the help of:
